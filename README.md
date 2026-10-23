@@ -76,6 +76,11 @@ novo; o resto fica como o deixaste.
 
 ## Stars
 
+[![a104437ana/planner stars](https://repo-stars.vercel.app/api/stars-badge?repo=a104437ana%2Fplanner)](https://repo-stars.vercel.app)
+[![a104437ana/planner stars](https://repo-stars.vercel.app/api/svg?repo=a104437ana%2Fplanner)](https://repo-stars.vercel.app)
+
+---
+
 <a href="https://star-history.com/#a104437ana/planner&Date">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=a104437ana/planner&type=Date&theme=dark" />
@@ -83,8 +88,3 @@ novo; o resto fica como o deixaste.
     <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=a104437ana/planner&type=Date" />
   </picture>
 </a>
-
----
-
-[![a104437ana/planner stars](https://repo-stars.vercel.app/api/stars-badge?repo=a104437ana%2Fplanner)](https://repo-stars.vercel.app)
-[![a104437ana/planner stars](https://repo-stars.vercel.app/api/svg?repo=a104437ana%2Fplanner)](https://repo-stars.vercel.app)
