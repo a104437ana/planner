@@ -73,3 +73,7 @@ Tudo fica em `~/.config/planner/`, um ficheiro de texto simples por
 categoria (`<cor><TAB><texto>` por linha) -- fácil de abrir, inspecionar
 ou editar à mão. Os hábitos diários reiniciam para vermelho a cada dia
 novo; o resto fica como o deixaste.
+
+## Stars
+
+[![Star History Chart](https://api.star-history.com/svg?repos=a104437ana/planner&type=Date)](https://star-history.com/#a104437ana/planner&Date)
