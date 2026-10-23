@@ -1,78 +1,80 @@
 # planner
 
-Um planner de terminal em C/ncurses: calendário do ano letivo, objetivos,
-hábitos diários, tarefas e notas por dia, tudo editável sem sair do
+A terminal planner in C/ncurses: academic year calendar, goals, daily
+habits, tasks and notes per day, all editable without leaving the
 terminal.
 
-Comecei este projeto no verão de 2023, e esta é a versão mais recente :)
+I started this project in the summer of 2023, and this is the latest
+version :)
 
-![Calendário e objetivos](docs/calendar-and-goals.png)
+![Calendar and goals](docs/calendar-and-goals.png)
 
-## Instalar
+## Install
 
-Precisa do ncurses (com suporte a largura de carateres/UTF-8):
+You need ncurses (with wide character/UTF-8 support):
 
 	sudo apt-get install libncurses-dev
 
-## Compilar e correr
+## Build and run
 
 	make
 	./planner
 
-A janela do terminal precisa de pelo menos 53 linhas x 203 colunas (o
-programa diz-te o tamanho exato se não couber, e sai sem corromper nada --
-é só aumentar a janela e correr `./planner` outra vez).
+The terminal window needs to be at least 53 lines x 203 columns (the
+program tells you the exact size if it doesn't fit, and exits without
+corrupting anything -- just make the window bigger and run `./planner`
+again).
 
-	make clean    # remove o executável e os ficheiros .o
+	make clean    # removes the executable and the .o files
 
-## Vistas
+## Views
 
-| Vista | O que tem |
+| View | What it has |
 |---|---|
-| `CALENDAR AND GOALS` | calendário do ano letivo (Julho a Junho) + 108 objetivos |
-| `EVENTS: JULY TO DECEMBER` | uma nota por cada dia, de Julho a Dezembro |
-| `EVENTS: JANUARY TO JUNE` | uma nota por cada dia, de Janeiro a Junho |
-| `TODAY` | mês atual e seguinte, hábitos diários (3 colunas, 40 cada) e tarefas |
+| `CALENDAR AND GOALS` | academic year calendar (July to June) + 108 goals |
+| `EVENTS: JULY TO DECEMBER` | one note per day, from July to December |
+| `EVENTS: JANUARY TO JUNE` | one note per day, from January to June |
+| `TODAY` | current and next month, daily habits (3 columns, 40 each) and tasks |
 
 <details>
-<summary>Screenshots das 4 vistas</summary>
+<summary>Screenshots of the 4 views</summary>
 
 **CALENDAR AND GOALS**
-![Calendário e objetivos](docs/calendar-and-goals.png)
+![Calendar and goals](docs/calendar-and-goals.png)
 
 **EVENTS: JULY TO DECEMBER**
-![Eventos: Julho a Dezembro](docs/events-jul-dec.png)
+![Events: July to December](docs/events-jul-dec.png)
 
 **EVENTS: JANUARY TO JUNE**
-![Eventos: Janeiro a Junho](docs/events-jan-jun.png)
+![Events: January to June](docs/events-jan-jun.png)
 
 **TODAY**
-![Hoje](docs/today.png)
+![Today](docs/today.png)
 
 </details>
 
-## Comandos
+## Commands
 
-	Setas              mover
-	A / S              trocar de vista
-	ENTER              editar / parar de editar o item selecionado
-	Setas (a editar)   mover o cursor dentro do texto
-	Home / End         ir para o início / fim do texto
-	Delete             apagar o carácter à frente do cursor
-	Ctrl+U             limpar o texto todo
-	SPACEBAR           mudar a cor do item selecionado
-	Q                  sair
+	Arrows             move
+	A / S              switch view
+	ENTER              edit / stop editing the selected item
+	Arrows (editing)   move the cursor within the text
+	Home / End         go to the start / end of the text
+	Delete             delete the character ahead of the cursor
+	Ctrl+U             clear all the text
+	SPACEBAR           change the color of the selected item
+	Q                  quit
 
-Objetivos, hábitos e tarefas só alternam entre vermelho (por fazer) e
-verde (feito) -- os eventos e as notas percorrem as 6 cores disponíveis
-(sem cor, vermelho, verde, amarelo, ciano, azul).
+Goals, habits and tasks only toggle between red (to do) and
+green (done) -- events and notes cycle through the 6 available colors
+(no color, red, green, yellow, cyan, blue).
 
-## Dados
+## Data
 
-Tudo fica em `~/.config/planner/`, um ficheiro de texto simples por
-categoria (`<cor><TAB><texto>` por linha) -- fácil de abrir, inspecionar
-ou editar à mão. Os hábitos diários reiniciam para vermelho a cada dia
-novo; o resto fica como o deixaste.
+Everything lives in `~/.config/planner/`, one plain text file per
+category (`<color><TAB><text>` per line) -- easy to open, inspect
+or edit by hand. Daily habits reset to red every new day; everything
+else stays as you left it.
 
 ## Stars
 
