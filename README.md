@@ -77,3 +77,6 @@ novo; o resto fica como o deixaste.
 ## Stars
 
 [![Star History Chart](https://api.star-history.com/svg?repos=a104437ana/planner&type=Date)](https://star-history.com/#a104437ana/planner&Date)
+
+[![a104437ana/planner stars](https://repo-stars.vercel.app/api/stars-badge?repo=a104437ana%2Fplanner)](https://repo-stars.vercel.app)
+[![a104437ana/planner stars](https://repo-stars.vercel.app/api/svg?repo=a104437ana%2Fplanner)](https://repo-stars.vercel.app)
